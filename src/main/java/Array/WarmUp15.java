@@ -1,3 +1,7 @@
+package Array;
+
+import BaseClass.BaseClass;
+
 import java.util.Arrays;
 
 /*
@@ -11,17 +15,17 @@ public class WarmUp15 extends BaseClass {
         int[] nums = {1, 2, 3, 4};
         int[] actual = makeMiddle(nums);
         int[] expected = {2, 3};
-        isTestPassed(Arrays.toString(actual), Arrays.toString(expected));
+        BaseClass.isTestPassed(Arrays.toString(actual), Arrays.toString(expected));
 
         int[] nums2 = {7, 1, 6, 3, 4, 9};
         int[] actual2 = makeMiddle(nums2);
         int[] expected2 = {6, 3};
-        isTestPassed(Arrays.toString(actual2), Arrays.toString(expected2));
+        BaseClass.isTestPassed(Arrays.toString(actual2), Arrays.toString(expected2));
 
         int[] nums3 = {1, 2};
         int[] actual3 = makeMiddle(nums3);
         int[] expected3 = {1, 2};
-        isTestPassed(Arrays.toString(actual3), Arrays.toString(expected3));
+        BaseClass.isTestPassed(Arrays.toString(actual3), Arrays.toString(expected3));
     }
 
     public static int[] makeMiddle(int[] nums) {

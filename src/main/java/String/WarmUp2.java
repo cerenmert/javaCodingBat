@@ -1,3 +1,7 @@
+package String;
+
+import BaseClass.BaseClass;
+
 /*
 Given a string, return a new string where the first and last chars have been exchanged.
 frontBack("code") → "eodc"
@@ -7,19 +11,19 @@ public class WarmUp2 extends BaseClass {
         WarmUp2 warmUp2 = new WarmUp2();
         String actualWord = warmUp2.frontBack("code");
         String expectedWord = "eodc";
-        isTestPassed(actualWord, expectedWord);
+        BaseClass.isTestPassed(actualWord, expectedWord);
 
         String actualWord2 = warmUp2.frontBack("a");
         String expectedWord2 = "a";
-        isTestPassed(actualWord2, expectedWord2);
+        BaseClass.isTestPassed(actualWord2, expectedWord2);
 
         String actualWord3 = warmUp2.frontBack("ab");
         String expectedWord3 = "ba";
-        isTestPassed(actualWord3, expectedWord3);
+        BaseClass.isTestPassed(actualWord3, expectedWord3);
 
         String actualWord4 = warmUp2.frontBack("");
         String expectedWord4 = "";
-        isTestPassed(actualWord4, expectedWord4);
+        BaseClass.isTestPassed(actualWord4, expectedWord4);
     }
 
     public String frontBack(String str) {

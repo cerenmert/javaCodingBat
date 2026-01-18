@@ -1,3 +1,7 @@
+package Array;
+
+import BaseClass.BaseClass;
+
 /*
 Start with 2 int arrays, a and b, of any length. Return how many of the arrays are divisible by 2
 as their first element.
@@ -11,27 +15,27 @@ public class WarmUp14 extends BaseClass {
         int[] a = {4, 2, 3};
         int[] b = {1, 3};
         int actual = countEvens(a, b);
-        isTestPassed(actual, 1);
+        BaseClass.isTestPassed(actual, 1);
 
         int[] a1 = {8, 2, 3};
         int[] b1 = {2};
         int actual1 = countEvens(a1, b1);
-        isTestPassed(actual1, 2);
+        BaseClass.isTestPassed(actual1, 2);
 
         int[] a2 = {};
         int[] b2 = {};
         int actual2 = countEvens(a2, b2);
-        isTestPassed(actual2, 0);
+        BaseClass.isTestPassed(actual2, 0);
 
         int[] a3 = {};
         int[] b3 = {6, 4, 2};
         int actual3 = countEvens(a3, b3);
-        isTestPassed(actual3, 1);
+        BaseClass.isTestPassed(actual3, 1);
 
         int[] a4 = {};
         int[] b4 = {3, 4};
         int actual4 = countEvens(a4, b4);
-        isTestPassed(actual4, 0);
+        BaseClass.isTestPassed(actual4, 0);
     }
 
     public static int countEvens(int[] a, int[] b) {

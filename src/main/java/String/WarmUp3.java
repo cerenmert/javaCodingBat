@@ -1,3 +1,7 @@
+package String;
+
+import BaseClass.BaseClass;
+
 /*
 Given a string, return a new string where "not " has been added to the front.
 However, if the string already begins with "not", return the string unchanged.
@@ -10,19 +14,19 @@ public class WarmUp3 extends BaseClass {
         WarmUp3 warmUp3 = new WarmUp3();
         String actualWord1 = warmUp3.notString("candy");
         String expectedWord1 = "not candy";
-        isTestPassed(actualWord1, expectedWord1);
+        BaseClass.isTestPassed(actualWord1, expectedWord1);
 
         String actualWord2 = warmUp3.notString("x");
         String expectedWord2 = "not x";
-        isTestPassed(actualWord2, expectedWord2);
+        BaseClass.isTestPassed(actualWord2, expectedWord2);
 
         String actualWord3 = warmUp3.notString("not bad");
         String expectedWord3 = "not bad";
-        isTestPassed(actualWord3, expectedWord3);
+        BaseClass.isTestPassed(actualWord3, expectedWord3);
 
         String actualWord4 = warmUp3.notString("no");
         String expectedWord4 = "not no";
-        isTestPassed(actualWord4, expectedWord4);
+        BaseClass.isTestPassed(actualWord4, expectedWord4);
     }
 
     public String notString(String str) {

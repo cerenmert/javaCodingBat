@@ -1,3 +1,7 @@
+package Array;
+
+import BaseClass.BaseClass;
+
 import java.util.Arrays;
 
 /*
@@ -12,12 +16,12 @@ public class WarmUp12 extends BaseClass {
         int[] nums = {4, 5, 6};
         int[] actual = makeLast(nums);
         int[] expected = new int[]{0, 0, 0, 0, 0, 6};
-        isTestPassed(Arrays.toString(actual), Arrays.toString(expected));
+        BaseClass.isTestPassed(Arrays.toString(actual), Arrays.toString(expected));
 
         int[] nums2 = {3};
         int[] actual2 = makeLast(nums2);
         int[] expected2 = new int[]{0, 3};
-        isTestPassed(Arrays.toString(actual2), Arrays.toString(expected2));
+        BaseClass.isTestPassed(Arrays.toString(actual2), Arrays.toString(expected2));
     }
 
     public static int[] makeLast(int[] nums) {

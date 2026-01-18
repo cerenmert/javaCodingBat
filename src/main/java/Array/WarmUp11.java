@@ -1,3 +1,7 @@
+package Array;
+
+import BaseClass.BaseClass;
+
 import java.util.Arrays;
 
 /*
@@ -11,12 +15,12 @@ public class WarmUp11 extends BaseClass {
         int[] nums = {1, 2, 3};
         int[] actual = maxEnd3(nums);
         int[] expected = new int[]{3, 3, 3};
-        isTestPassed(Arrays.toString(actual), Arrays.toString(expected));
+        BaseClass.isTestPassed(Arrays.toString(actual), Arrays.toString(expected));
 
         int[] nums2 = {11, 5, 9};
         int[] actual2 = maxEnd3(nums2);
         int[] expected2 = new int[]{11, 11, 11};
-        isTestPassed(Arrays.toString(actual2), Arrays.toString(expected2));
+        BaseClass.isTestPassed(Arrays.toString(actual2), Arrays.toString(expected2));
     }
 
     public static int[] maxEnd3(int[] nums) {

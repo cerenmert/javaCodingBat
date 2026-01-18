@@ -1,3 +1,7 @@
+package String;
+
+import BaseClass.BaseClass;
+
 /*
 Return true if the given string contains between 1 and 3 'e' chars.
 stringE("Heelle") → true
@@ -7,15 +11,15 @@ public class WarmUp6 extends BaseClass {
     public static void main(String[] args) {
         WarmUp6 warmUp6 = new WarmUp6();
         Boolean actual = warmUp6.stringE("Hello");
-        isTestPassed(actual, true);
+        BaseClass.isTestPassed(actual, true);
         Boolean actual1 = warmUp6.stringE("Helle");
-        isTestPassed(actual1, true);
+        BaseClass.isTestPassed(actual1, true);
         Boolean actual2 = warmUp6.stringE("Hellee");
-        isTestPassed(actual2, false);
+        BaseClass.isTestPassed(actual2, false);
         Boolean actual3 = warmUp6.stringE("e");
-        isTestPassed(actual3, true);
+        BaseClass.isTestPassed(actual3, true);
         Boolean actual4 = warmUp6.stringE("");
-        isTestPassed(actual4, false);
+        BaseClass.isTestPassed(actual4, false);
     }
 
     public boolean stringE(String str) {

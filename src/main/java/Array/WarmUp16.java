@@ -1,3 +1,7 @@
+package Array;
+
+import BaseClass.BaseClass;
+
 import java.util.Arrays;
 
 /*
@@ -10,19 +14,19 @@ public class WarmUp16 extends BaseClass {
         int[] b3 = {3, 4, 6, 3, 4, 5, 1, 9, 5, 6, 8};
         int[] actual3 = plusTwo(a3, b3);
         int[] expected3 = {1, 2, 5, 6, 7, 8, 8, 8, 9, 9, 9, 0, 3, 4, 6, 3, 4, 5, 1, 9, 5, 6, 8};
-        isTestPassed(Arrays.toString(actual3), Arrays.toString(expected3));
+        BaseClass.isTestPassed(Arrays.toString(actual3), Arrays.toString(expected3));
 
         int[] a = {4, 2};
         int[] b = {1, 3};
         int[] actual = plusTwo2(a, b);
         int[] expected = {4, 2, 1, 3};
-        isTestPassed(Arrays.toString(actual), Arrays.toString(expected));
+        BaseClass.isTestPassed(Arrays.toString(actual), Arrays.toString(expected));
 
         int[] a2 = {7, 7};
         int[] b2 = {3, 8};
         int[] actual2 = plusTwo3(a2, b2);
         int[] expected2 = {7, 7, 3, 8};
-        isTestPassed(Arrays.toString(actual2), Arrays.toString(expected2));
+        BaseClass.isTestPassed(Arrays.toString(actual2), Arrays.toString(expected2));
     }
 
     public static int[] plusTwo(int[] a, int[] b) {

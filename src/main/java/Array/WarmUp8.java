@@ -1,13 +1,18 @@
+package Array;
+
+import BaseClass.BaseClass;
+
 import java.util.Arrays;
+
 /*
 Return an int array length 3 containing the first 3 digits of pi, {3, 1, 4}.
 makePi() → [3, 1, 4]
  */
-public class WarmUp8 extends BaseClass{
+public class WarmUp8 extends BaseClass {
     public static void main(String[] args) {
         int[] piArray = makePi();
         int[] expectedArray = {3, 1, 4};
-        isTestPassed(Arrays.toString(piArray), Arrays.toString(expectedArray));
+        BaseClass.isTestPassed(Arrays.toString(piArray), Arrays.toString(expectedArray));
     }
 
     public static int[] makePi() {
