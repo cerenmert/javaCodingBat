@@ -30,6 +30,14 @@ public class WarmUp22 extends BaseClass {
 
     }
 
+    /*
+    "Şu an yazdığım kod, bana verilen orijinal diziyi (referansı) değiştiriyor.
+     Buna 'Mutation' veya 'Side Effect' denir. Eğer büyük bir sistemde çalışsaydık ve bu diziyi başka yerler de
+     kullanıyor olsaydı, orijinalini bozmamak için önce nums.clone() ile kopyasını alır,
+     değişikliği kopya üzerinde yapardım. Ancak bu problemde bizden 'modified array' istendiği için
+     'in-place' (yerinde) değişiklik yapıyorum."
+     */
+
     public static int[] swapEnds(int[] nums) {
         // 1. Guard Clause (Koruyucu Madde):
         // Eğer dizi 1 elemanlıysa (veya boşsa) işlem yapma, direkt dön.
@@ -45,5 +53,6 @@ public class WarmUp22 extends BaseClass {
 
         return nums;
     }
+
 
 }
