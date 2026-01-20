@@ -2,26 +2,7 @@ package BaseClass;
 
 public class BaseClass {
 
-    public static void isTestPassed(String actual, String expected) {
-        if (actual.equals(expected)) {
-            System.out.println("PASSED");
-        } else {
-            System.out.println("FAILED");
-        }
-    }
-
-    public static void isTestPassed(Boolean actual, Boolean expected) {
-        if (actual.equals(expected)) {
-            System.out.println("PASSED");
-        } else {
-            System.out.println("FAILED");
-        }
-    }
-    public static void isTestPassed(Integer actual, Integer expected) {
-        if (actual.equals(expected)) {
-            System.out.println("PASSED");
-        } else {
-            System.out.println("FAILED");
-        }
+    public static void isTestPassed(Object actual, Object expected) {
+        System.out.println(actual.equals(expected) ? "PASSED" : "FAILED");
     }
 }
